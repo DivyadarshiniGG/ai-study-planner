@@ -1,0 +1,97 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.07);
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-primary { background: #6366f1; color: white; }
+.btn-primary:hover { background: #4f46e5; }
+.btn-danger { background: #ef4444; color: white; }
+.btn-success { background: #22c55e; color: white; }
+.btn-warning { background: #f59e0b; color: white; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #fff;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0e7ff;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}
+
+.navbar h1 { color: #6366f1; font-size: 22px; }
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-high { background: #fee2e2; color: #dc2626; }
+.badge-medium { background: #fef9c3; color: #ca8a04; }
+.badge-low { background: #dcfce7; color: #16a34a; }
+.badge-pending { background: #e0e7ff; color: #4338ca; }
+.badge-completed { background: #dcfce7; color: #16a34a; }
+.badge-in_progress { background: #fef3c7; color: #d97706; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+.ai-response {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #475569;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+}
+
+.timer { font-size: 64px; font-weight: 700; color: #6366f1; text-align: center; }
+.timer-label { text-align: center; color: #64748b; margin-bottom: 20px; }
